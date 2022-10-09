@@ -3,3 +3,22 @@
     padding:0;
     list-style:none;
 }
+.carousel-caption h1{
+    font-size:80px;
+    text-align: left; 
+}
+.carousel-caption h3{
+    text-align: left; 
+    
+}
+.carousel-caption p{
+    font-size: 20px;
+    color:rgb(253, 253, 253); 
+    text-align: left;
+    font-weight: 600;
+}
+
+.d-block{
+    background: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
