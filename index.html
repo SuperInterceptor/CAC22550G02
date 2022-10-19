@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-  <!--Para la creacion de las Tabs-->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -26,150 +26,69 @@
   </header>
   <main>
 
-
-
     <br>
     <div class="categorias p-3 m-0 border-1">
       <div class="contenedor container bg-dark">
         <div class="row">
           <div class="col-12">
-
-            <h2 class="text-light">Categorias</h2>
-            <ul class="nav nav-tabs ">
-              <li class="menuSolapas active" id="2d"><a data-toggle="tab" href="#home" name="menuTab" onclick="solapas()">Peliculas 2D</a></li>
-              <li class="menuSolapas" id="3d"><a data-toggle="tab" href="#menu1" name="menuTab" onclick="solapas()">Peliculas 3D</a></li>
-              <li class="menuSolapas" id="4d"><a data-toggle="tab" href="#menu2" name="menuTab" onclick="solapas()">Peliculas 4D</a></li>
+            <h2 class="text-secondary mb-3" id="tituloCate2D">BUSQUEDA DE PELICULAS</h2>
+            <ul id="myTab" class="nav nav-tabs ">
+              <li class="menuSolapas active" type="solapa" id="2d" onclick="mostrar()"><a data-toggle="tab"
+                  data-bs-target="#2D" href="#2D" name="menuTab">Peliculas 2D</a></li>
+              <li class="menuSolapas" type="solapa" id="3d" onclick="limpiar()"><a data-toggle="tab"
+                  data-bs-target="#3D" href="#3D" name="menuTab">Peliculas 3D</a></li>
             </ul>
-
             <div class="tab-content">
-
-              <div id="menu1" class="tab-pane fade">
-
-              </div>
-              <div id="menu2" class="tab-pane fade">
+              <div id="2D" class="tab-pane fade">
 
               </div>
-              <div id="menu3" class="tab-pane fade">
+              <div id="3D" class="tab-pane fade">
+                <div id="pelis3D" class="d-flex">
 
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4 col-sm-2 mt-5 text-light">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="todos" checked onclick="seleccion()"> 
-              <label class="form-check-label" for="flexRadioDefault2" >
-                Todos
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="drama" onclick="seleccion()">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Drama
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="suspenso" onclick="seleccion()">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Terror/Suspenso
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="comedia" onclick="seleccion()">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Comedia
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="infantil" onclick="seleccion()">
-              <label class="form-check-label" for="flexRadioDefault1" >
-                Infantil
-              </label>
-            </div>
-
-          </div>
-
-          <div class="col-8 col-sm-10">
-
-
-            <div id="2d" class="tab-content">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-inner d-md-flex">
-                  <div class="carousel-item active">
-                    <img src="./imagenes/imagenesCate/drama/1.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/drama/2.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/drama/3.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/drama/4.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/suspenso/1.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/imagenesCate/suspenso/2.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/suspenso/3.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/suspenso/4.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/comedia/1.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/comedia/2.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/imagenesCate/comedia/3.jpg" class="img-fluid w-45 m-1" alt="..."
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/infantiles/1.jpg" class="img-fluid w-45 m-1" alt=""
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/infantiles/2.jpg" class="img-fluid w-45 m-1" alt=""
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/infantiles/3.jpg" class="img-fluid w-45 m-1" alt=""
-                      style="height: 30vh;">
-                    <img src="./imagenes/imagenesCate/infantiles/4.jpg" class="img-fluid w-45 m-1" alt=""
-                      style="height: 30vh;">
-
-                  </div>
-
-                  <div class="carousel-item">
-                    <img src="./imagenes/imagenesCate/infantiles/5.jpg" class="img-fluid w-45" alt="..."
-                      style="height: 30vh;">
-
-                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-sm-2 mt-1 text-light">
+            <div class="form text-secondary" id="formulario">
+              <div class="form-check m-2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DD" id="drama">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Drama
+                </label>
+              </div>
+              <div class="form-check m-2 mt-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DS" id="suspenso">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Terror/Suspenso
+                </label>
+              </div>
+              <div class="form-check m-2 mt-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DC" id="comedia">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Comedia
+                </label>
+              </div>
+              <div class="form-check m-2 mt-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DI" id="infantil">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Infantil
+                </label>
               </div>
 
             </div>
-
-
-
-            
-
-
-
-
           </div>
+
+          <div class="columnasPelis col-8 col-sm-10">
+            <div id="pelis2D" class="d-flex">
+
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-
-
-
-
+    </div>
 
   </main>
   <footer>
