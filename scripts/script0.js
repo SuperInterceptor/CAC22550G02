@@ -1,5 +1,6 @@
 // Script Inicial ( vacio por ahora )
 
+
 const pelisCate = [
     {
         id: 1,
@@ -117,15 +118,6 @@ function eliminar() {
     document.getElementById('pelis2D').innerHTML = '';
 }
 
-function limpiar() {
-    document.getElementById('formulario').style.display = "none";
-    document.getElementById('pelis2D').innerHTML = '';
-}
-
-function mostrar() {
-    document.getElementById('formulario').style.display = "";
-}
-
 
 let seleccion = "";
 let opciones = document.querySelectorAll('input[type="radio"]');
@@ -135,7 +127,10 @@ let opciones = document.querySelectorAll('input[type="radio"]');
 document.querySelector('[value="2DD"]').checked = true;
 
 
-document.querySelector('#formulario').addEventListener('change', () => {
+
+
+
+document.querySelector('#option').addEventListener('change', () => {
     opciones.forEach(opcion => {
         if (opcion.checked) {
             eliminar();
@@ -159,7 +154,7 @@ document.querySelector('#formulario').addEventListener('change', () => {
                         </div>
                     `;
                     cardProductos.innerHTML = card;
-                    cardProductos.style.width = "35vh";
+                    //cardProductos.style.width = "35vh";
                     cards.appendChild(cardProductos);
                 });
             }
@@ -167,6 +162,9 @@ document.querySelector('#formulario').addEventListener('change', () => {
         }
     })
 })
+
+
+
 
 const generarCards3D = (pelisCate3D) => {
     let cards3D = document.getElementById("pelis3D");
@@ -180,7 +178,7 @@ const generarCards3D = (pelisCate3D) => {
             </div>
         `;
         cardCate.innerHTML = card3D;
-        cardCate.style.width = "35vh";
+        //cardCate.style.width = "35vh";
         cards3D.appendChild(cardCate);
     });
 }

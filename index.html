@@ -33,14 +33,53 @@
           <div class="col-12">
             <h2 class="text-secondary mb-3" id="tituloCate2D">BUSQUEDA DE PELICULAS</h2>
             <ul id="myTab" class="nav nav-tabs ">
-              <li class="menuSolapas active" type="solapa" id="2d" onclick="mostrar()"><a data-toggle="tab"
-                  data-bs-target="#2D" href="#2D" name="menuTab">Peliculas 2D</a></li>
-              <li class="menuSolapas" type="solapa" id="3d" onclick="limpiar()"><a data-toggle="tab"
-                  data-bs-target="#3D" href="#3D" name="menuTab">Peliculas 3D</a></li>
+              <li class="menuSolapas active" type="solapa" id="2d"><a data-toggle="tab" data-bs-target="#2D" href="#2D"
+                  name="menuTab">Peliculas 2D</a></li>
+              <li class="menuSolapas " type="solapa" id="3d"><a data-toggle="tab" data-bs-target="#3D" href="#3D"
+                  name="menuTab">Peliculas 3D</a></li>
             </ul>
+
             <div class="tab-content">
               <div id="2D" class="tab-pane fade">
+                <div class="row">
+                  <div class="col-4 col-sm-2 mt-1 text-light">
+                    <div class="form text-secondary" id="option">
+                      <div class="form-check m-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DD" id="drama">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Drama
+                        </label>
+                      </div>
+                      <div class="form-check m-2 mt-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DS" id="suspenso">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Terror/Suspenso
+                        </label>
+                      </div>
+                      <div class="form-check m-2 mt-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DC" id="comedia">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Comedia
+                        </label>
+                      </div>
+                      <div class="form-check m-2 mt-3">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DI" id="infantil">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Infantil
+                        </label>
+                      </div>
 
+                    </div>
+                  </div>
+                  <div class="columnasPelis col-8 col-sm-10">
+                    <div id="pelis2D" class="d-flex">
+
+
+                    </div>
+
+                  </div>
+
+                </div>
               </div>
               <div id="3D" class="tab-pane fade">
                 <div id="pelis3D" class="d-flex">
@@ -49,46 +88,12 @@
               </div>
             </div>
           </div>
-          <div class="col-4 col-sm-2 mt-1 text-light">
-            <div class="form text-secondary" id="formulario">
-              <div class="form-check m-2">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DD" id="drama">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Drama
-                </label>
-              </div>
-              <div class="form-check m-2 mt-3">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DS" id="suspenso">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Terror/Suspenso
-                </label>
-              </div>
-              <div class="form-check m-2 mt-3">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DC" id="comedia">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Comedia
-                </label>
-              </div>
-              <div class="form-check m-2 mt-3">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" value="2DI" id="infantil">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Infantil
-                </label>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="columnasPelis col-8 col-sm-10">
-            <div id="pelis2D" class="d-flex">
-
-            </div>
-          </div>
-
         </div>
       </div>
+
     </div>
     </div>
+
 
   </main>
   <footer>
