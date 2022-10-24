@@ -14,11 +14,55 @@
 
 <body>
   <header>
-    <div>
-      <img src="./imagenes/Logo0.png" alt="Problemas con el LOGO">
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./imagenes/Logo0.png" alt="Cine a Cine" height="75px" width="250px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#Cartelera">Cartelera</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Infantiles</a></li>
+                <li><a class="dropdown-item" href="#">Accion</a></li>
+                <li><a class="dropdown-item" href="#">Romanticas</a></li>
+                <li><a class="dropdown-item" href="#">Terror</a></li>
+                <li><a class="dropdown-item" href="#">Comedias</a></li>
+                <li><a class="dropdown-item" href="#">Ciencia Ficcion</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Compras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Carrito</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Su busqueda ..." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
   </header>
+
   <main>
+    <div>
+      <a name="Cartelera"></a>
+    </div>
     <h1 class="cartelera">Cartelera de peliculas/eventos</h1>
     <div class="container">
 
@@ -188,7 +232,8 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="./scripts/script0.js"></script>
 </body>
 
