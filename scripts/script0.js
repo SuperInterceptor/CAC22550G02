@@ -1,6 +1,6 @@
 // Script Inicial ( vacio por ahora )
 
-
+/*CATEGORIAS DE PELICULAS*/
 const pelisCate = [
     {
         id: 1,
@@ -123,11 +123,18 @@ let seleccion = "";
 let opciones = document.querySelectorAll('input[type="radio"]');
 
 
+function ocultarDiv(){
+    document.getElementById("inicial").style.display = "none";
+    document.getElementById("todos").style.display = "none"; 
 
-document.querySelector('[value="2DD"]').checked = true;
+}
 
+function mostrarDiv(){
+    document.getElementById("inicial").style.display = "inline";
+    document.getElementById('2D').innerHTML = '';
+    document.getElementById('pelis3D').innerHTML = '';
 
-
+}
 
 
 document.querySelector('#option').addEventListener('change', () => {
@@ -165,7 +172,6 @@ document.querySelector('#option').addEventListener('change', () => {
 
 
 
-
 const generarCards3D = (pelisCate3D) => {
     let cards3D = document.getElementById("pelis3D");
     pelisCate3D.forEach(pelisCate3D => {
@@ -183,3 +189,5 @@ const generarCards3D = (pelisCate3D) => {
     });
 }
 generarCards3D(pelisCate3D);
+
+/*FIN CATEGORIAS DE PELICULAS*/
